@@ -110,7 +110,8 @@ if __name__ == '__main__' and input:
     # 構文解析API実行
     result = cotoha_api.sentiment(input)
     r = result['result']
-    #st.write(r['score'])
+    st.write(r['sentiment'])
+    st.write(r['score'])
     a = r['score']
     chart_data = pd.DataFrame(
         np.random.randn(24,1),
