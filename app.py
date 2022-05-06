@@ -8,7 +8,9 @@ import configparser
 import codecs
 st.title('Emotion Diary')
 input = False
-input = st.text_area(label='write here',max_chars=140,placeholder='ここに入力')
+form = st.form(key='my_form')
+input = form.text_area(label='write here',max_chars=140,placeholder='ここに入力')
+submit_button = form.form_submit_button(label='Submit')
 # COTOHA API操作用クラス
 class CotohaApi:
     # 初期化
