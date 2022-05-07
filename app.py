@@ -115,6 +115,8 @@ if __name__ == '__main__' and input:
     st.write(r['sentiment'])
     st.write(r['score'])
     a = r['score']
+    data = []
+    data.append(a)
     chart_data = pd.DataFrame(
         np.random.randn(24,1),
         columns=['emotion'])
